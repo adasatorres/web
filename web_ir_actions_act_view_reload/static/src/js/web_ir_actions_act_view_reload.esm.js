@@ -13,7 +13,6 @@ function ir_actions_act_view_reload(args) {
 
     // TODO: for Odoo v16, this will probably need to be re-written in Owl
     // REF: https://github.com/odoo/odoo/blob/7054fd6beb4f417efa4b22aafe8b935dd6ade123/addons/web/static/src/webclient/actions/action_service.js#L1257-L1267
-    
 
     const controller = args.env.services.action.currentController;
     if (controller) {
