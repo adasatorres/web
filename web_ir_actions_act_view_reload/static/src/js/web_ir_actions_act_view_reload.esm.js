@@ -15,11 +15,15 @@ function ir_actions_act_view_reload(args) {
     // REF: https://github.com/odoo/odoo/blob/7054fd6beb4f417efa4b22aafe8b935dd6ade123/addons/web/static/src/webclient/actions/action_service.js#L1257-L1267
 
     const controller = args.env.services.action.currentController;
+    console.log("1");
     if (controller) {
+        console.log("2");
         const {__legacy_widget__} = controller.getLocalState();
-        if (__legacy_widget__) {
-            __legacy_widget__.reload({});
-        }
+        
+            console.log("3");
+            return __legacy_widget__.reload({});
+            
+        
     }
     return Promise.resolve();
 }
