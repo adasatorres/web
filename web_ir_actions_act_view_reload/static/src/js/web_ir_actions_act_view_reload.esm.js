@@ -8,8 +8,6 @@ const actionHandlersRegistry = registry.category("action_handlers");
 
     function ir_actions_act_view_reload(args) {
         location.reload();   
-
-        console.log(args);
     }
 
 actionHandlersRegistry.add("ir.actions.act_view_reload", ir_actions_act_view_reload);
